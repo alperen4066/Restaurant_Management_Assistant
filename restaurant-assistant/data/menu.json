@@ -1,0 +1,220 @@
+{
+  "menu_items": [
+    {
+      "id": "app1",
+      "name": "Bruschetta Trio",
+      "price": 12.50,
+      "description": "Three varieties: classic tomato, mushroom pâté, and roasted pepper",
+      "allergens": ["gluten"],
+      "category": "appetizer",
+      "emoji": "🍞"
+    },
+    {
+      "id": "app2",
+      "name": "Caesar Salad",
+      "price": 11.00,
+      "description": "Crisp romaine, parmesan, croutons, and Caesar dressing",
+      "allergens": ["gluten", "eggs", "fish", "milk"],
+      "category": "appetizer",
+      "emoji": "🥗"
+    },
+    {
+      "id": "app3",
+      "name": "Garlic Shrimp",
+      "price": 14.50,
+      "description": "Sautéed shrimp in white wine, garlic butter, and herbs",
+      "allergens": ["shellfish", "milk"],
+      "category": "appetizer",
+      "emoji": "🦐"
+    },
+    {
+      "id": "m1",
+      "name": "Truffle Mushroom Risotto",
+      "price": 22.50,
+      "description": "Creamy Arborio rice with wild mushrooms, white wine and truffle oil",
+      "allergens": ["milk"],
+      "category": "main",
+      "emoji": "🍚"
+    },
+    {
+      "id": "m2",
+      "name": "Spicy Thai Peanut Noodles",
+      "price": 18.00,
+      "description": "Rice noodles with vegetables in a spicy peanut and lime sauce",
+      "allergens": ["peanuts", "soy"],
+      "category": "main",
+      "emoji": "🍜"
+    },
+    {
+      "id": "m3",
+      "name": "Mediterranean Grilled Salmon",
+      "price": 24.00,
+      "description": "Grilled salmon with lemon, herbs, roasted vegetables and quinoa",
+      "allergens": ["fish"],
+      "category": "main",
+      "emoji": "🐟"
+    },
+    {
+      "id": "m4",
+      "name": "Classic Margherita Pizza",
+      "price": 16.50,
+      "description": "Wood-fired pizza with tomato sauce, mozzarella and fresh basil",
+      "allergens": ["gluten", "milk"],
+      "category": "main",
+      "emoji": "🍕"
+    },
+    {
+      "id": "m5",
+      "name": "Beef Tenderloin Steak",
+      "price": 32.00,
+      "description": "Prime beef with garlic butter, served with seasonal vegetables",
+      "allergens": ["milk"],
+      "category": "main",
+      "emoji": "🥩"
+    },
+    {
+      "id": "m6",
+      "name": "Chicken Parmesan",
+      "price": 21.00,
+      "description": "Breaded chicken breast with marinara, mozzarella, and spaghetti",
+      "allergens": ["gluten", "eggs", "milk"],
+      "category": "main",
+      "emoji": "🍗"
+    },
+    {
+      "id": "m7",
+      "name": "Lamb Tagine",
+      "price": 26.00,
+      "description": "Slow-cooked Moroccan lamb with apricots, almonds, and couscous",
+      "allergens": ["nuts"],
+      "category": "main",
+      "emoji": "🍖"
+    },
+    {
+      "id": "v1",
+      "name": "Vegan Buddha Bowl",
+      "price": 17.00,
+      "description": "Roasted chickpeas, sweet potato, avocado and tahini dressing",
+      "allergens": ["sesame"],
+      "category": "vegan",
+      "emoji": "🥙"
+    },
+    {
+      "id": "v2",
+      "name": "Quinoa Stuffed Bell Peppers",
+      "price": 15.50,
+      "description": "Colorful peppers filled with quinoa, vegetables and herbs",
+      "allergens": [],
+      "category": "vegan",
+      "emoji": "🫑"
+    },
+    {
+      "id": "v3",
+      "name": "Portobello Mushroom Burger",
+      "price": 16.00,
+      "description": "Grilled portobello with avocado, arugula, and balsamic glaze",
+      "allergens": ["gluten", "soy"],
+      "category": "vegan",
+      "emoji": "🍔"
+    },
+    {
+      "id": "side1",
+      "name": "Truffle Fries",
+      "price": 7.50,
+      "description": "Crispy fries with truffle oil and parmesan",
+      "allergens": ["milk"],
+      "category": "side",
+      "emoji": "🍟"
+    },
+    {
+      "id": "side2",
+      "name": "Grilled Vegetables",
+      "price": 6.50,
+      "description": "Seasonal vegetables with olive oil and herbs",
+      "allergens": [],
+      "category": "side",
+      "emoji": "🥦"
+    },
+    {
+      "id": "d1",
+      "name": "Warm Chocolate Lava Cake",
+      "price": 9.50,
+      "description": "Molten dark chocolate cake with vanilla ice cream",
+      "allergens": ["gluten", "eggs", "milk"],
+      "category": "dessert",
+      "emoji": "🍰"
+    },
+    {
+      "id": "d2",
+      "name": "Tiramisu",
+      "price": 8.50,
+      "description": "Classic Italian dessert with coffee, mascarpone and cocoa",
+      "allergens": ["gluten", "eggs", "milk"],
+      "category": "dessert",
+      "emoji": "🍮"
+    },
+    {
+      "id": "d3",
+      "name": "Crème Brûlée",
+      "price": 8.00,
+      "description": "Vanilla custard with caramelized sugar crust",
+      "allergens": ["eggs", "milk"],
+      "category": "dessert",
+      "emoji": "🍪"
+    },
+    {
+      "id": "d4",
+      "name": "Fruit Sorbet Trio",
+      "price": 7.00,
+      "description": "Mango, raspberry, and lemon sorbet - dairy free",
+      "allergens": [],
+      "category": "dessert",
+      "emoji": "🍨"
+    },
+    {
+      "id": "dr1",
+      "name": "Fresh Orange Juice",
+      "price": 5.00,
+      "description": "Freshly squeezed orange juice",
+      "allergens": [],
+      "category": "beverage",
+      "emoji": "🍊"
+    },
+    {
+      "id": "dr2",
+      "name": "House Wine (Glass)",
+      "price": 7.50,
+      "description": "Red or white wine from local vineyard",
+      "allergens": ["sulfites"],
+      "category": "beverage",
+      "emoji": "🍷"
+    },
+    {
+      "id": "dr3",
+      "name": "Craft Beer",
+      "price": 6.50,
+      "description": "Selection of local craft beers on tap",
+      "allergens": ["gluten"],
+      "category": "beverage",
+      "emoji": "🍺"
+    },
+    {
+      "id": "dr4",
+      "name": "Sparkling Water",
+      "price": 3.50,
+      "description": "Premium sparkling mineral water",
+      "allergens": [],
+      "category": "beverage",
+      "emoji": "💧"
+    },
+    {
+      "id": "dr5",
+      "name": "Espresso",
+      "price": 3.00,
+      "description": "Rich Italian espresso",
+      "allergens": [],
+      "category": "beverage",
+      "emoji": "☕"
+    }
+  ]
+}

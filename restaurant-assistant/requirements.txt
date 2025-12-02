@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-community
+pydantic
+python-dotenv
+sentence-transformers
+chromadb
+email-validator
