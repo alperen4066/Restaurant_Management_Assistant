@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #0f172a;
+}
+
+/* Layout */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  color: #f9fafb;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid #fbbf24;
+  background: #111827;
+}
+
+.logo-text strong {
+  color: #fbbf24;
+}
+.logo span {
+  color: #fbbf24;
+}
+
+.nav a {
+  margin-left: 24px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav a:hover {
+  color: #fbbf24;
+}
+
+/* Hero */
+.hero {
+  min-height: 60vh;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at top left, #1d4ed8, #020617);
+  color: #f9fafb;
+}
+.hero-content {
+  max-width: 520px;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+}
+
+.primary-btn {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+  color: #111827;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Cards with images */
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.18);
+}
+
+.card-image img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 14px 16px 16px;
+}
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.gallery-item {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.22);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+  background: #f9fafb;
+}
+.section-alt {
+  background: #e5e7eb;
+}
+
+.section h2 {
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+.card h3 {
+  margin-bottom: 8px;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+.price {
+  font-weight: 600;
+  color: #111827;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  background: #020617;
+}
+
+/* Assistant button */
+.assistant-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-size: 1.8rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  z-index: 30;
+}
+
+/* Assistant widget */
+.assistant-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 96px;
+  width: 500px;          
+  max-height: 720px;     
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.4);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 40;
+}
+
+.assistant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 0.95rem;
+}
+
+.assistant-close {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Chat internals – reuse your old styles, just scoped */
+.assistant-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user-info {
+  padding: 10px 12px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+}
+
+.user-info label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.user-info input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.8rem;
+}
+
+.chat-container {
+  flex: 1;
+  min-height: 420px;     /* was 680px – allow space for inputs + summary */
+  max-height: 560px;     /* optional: keep it from growing too large */
+  padding: 12px 14px;
+  overflow-y: auto;
+  background: white;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  max-width: 85%;
+  font-size: 0.85rem;
+}
+
+.message.user {
+  background: #4f46e5;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.assistant {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.order-summary {
+  padding: 8px 12px;
+  background: #fef3c7;
+  border-top: 1px solid #facc15;
+  font-size: 0.8rem;
+}
+
+.order-summary h3 {
+  margin-bottom: 4px;
+}
+
+.input-area {
+  padding: 10px 12px;
+  display: flex;
+  gap: 6px;
+  background: #f3f4f6;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.85rem;
+}
+
+.input-area button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}

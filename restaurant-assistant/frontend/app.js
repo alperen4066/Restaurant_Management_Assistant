@@ -5,6 +5,34 @@ const emailInput = document.getElementById("email");
 const allergenInput = document.getElementById("allergens");
 const orderSummaryDiv = document.getElementById("orderItems");
 
+// Assistant widget elements
+const widget = document.getElementById("assistant-widget");
+const toggleBtn = document.getElementById("assistant-toggle");
+const closeBtn = document.getElementById("assistant-close");
+const openHeroBtn = document.getElementById("open-assistant-btn");
+
+// Show/hide widget
+function openAssistant() {
+  widget.style.display = "flex";
+}
+
+function closeAssistant() {
+  widget.style.display = "none";
+}
+
+toggleBtn.addEventListener("click", () => {
+  if (widget.style.display === "flex") {
+    closeAssistant();
+  } else {
+    openAssistant();
+  }
+});
+
+closeBtn.addEventListener("click", closeAssistant);
+if (openHeroBtn) {
+  openHeroBtn.addEventListener("click", openAssistant);
+}
+
 // Generate or retrieve session ID
 const sessionId = localStorage.getItem("session_id") || Math.random().toString(36).slice(2);
 localStorage.setItem("session_id", sessionId);
