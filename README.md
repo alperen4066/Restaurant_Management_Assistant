@@ -175,6 +175,7 @@ maison-lumiere/
 │       ├── app.js           # Chat UI and API integration
 │       └── firebase.json    # Firebase Hosting configuration
 └── README.md
+'''
 
 ---
 
