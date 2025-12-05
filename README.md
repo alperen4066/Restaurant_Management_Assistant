@@ -14,7 +14,7 @@
 - [How It Works](#how-it-works)
 - [Project Structure](#project-structure)
 - [Limitations and Future Work](#limitations-and-future-work)
-- [Acknowledgements](#acknowledgements)
+
 
 ---
 
@@ -64,16 +64,21 @@ At a high level, Maison Lumière is split into two parts:
 * Azure CLI (used during deployment experiments)
 
 ## Screenshots 📸
-*(Add the following images to your repository's `images/` folder)*
 
-![Restaurant landing page](images/homepage.png)
+![Restaurant landing page](images/homepage.jpg)
 *Landing page of the restaurant site*
 
-![Chat-based ordering](images/chat-order.png)
+![Chat-based ordering](images/chat-order.jpg)
 *Chat assistant taking an order*
 
-![Order summary](images/order-summary.png)
+![Order summary](images/order-summary.jpg)
 *Final structured order summary*
+
+![Reservation](images/reservation.jpg)
+*Reservation*
+
+![Reservation Confirm](images/conf-mail.jpg)
+*Reservation Confirmed email has been sent*
 
 ---
 
@@ -89,7 +94,7 @@ This section explains how to run the project locally from scratch.
 ### Backend Setup (Local)
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/](https://github.com/)<your-username>/maison-lumiere.git
+    git clone https://github.com/alperen4066/Restaurant_Management_Assistant.git
     cd maison-lumiere/restaurant-assistant/backend
     ```
 
@@ -170,3 +175,22 @@ maison-lumiere/
 │       ├── app.js           # Chat UI and API integration
 │       └── firebase.json    # Firebase Hosting configuration
 └── README.md
+
+---
+
+## Limitations and Future Work
+
+- **Backend hosting** – Currently, the backend is not deployed to the cloud due to RAM limits of free tiers and the embedding model. A future iteration could:
+  - Use a lighter external embedding API or smaller model.  
+  - Move to a more powerful app service plan or container platform. [web:139]
+
+- **Authentication and payments** – The project focuses on the ordering experience; payments and user accounts are out of scope but could be integrated later. [web:137]
+
+- **Voice interface** – An extension could add speech‑to‑text and text‑to‑speech for fully hands‑free ordering. [web:134]
+
+
+---
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
