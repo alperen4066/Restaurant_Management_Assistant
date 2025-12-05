@@ -371,7 +371,9 @@ h2 {
   right: 24px;
   bottom: 96px;
   width: 480px;
-  max-height: 720px;
+  /* max-height: 720px;*/
+  height: 720px;
+  grid-template-rows: auto auto 1fr auto auto;
   background: #020617;
   border-radius: 18px;
   box-shadow: 0 24px 55px rgba(15, 23, 42, 0.7);
@@ -381,12 +383,17 @@ h2 {
   border: 1px solid rgba(148, 163, 184, 0.25);
   z-index: 40;
 }
+
+.assistant-widget[style*="flex"] {
+  display: grid !important;
+}
 @media (max-width: 900px) {
   .assistant-widget {
     right: 12px;
     left: 12px;
     bottom: 90px;
     width: auto;
+    height: auto;
     max-height: calc(100vh - 140px);
   }
 
@@ -461,6 +468,7 @@ h2 {
 }
 
 .assistant-header {
+  flex:  0 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -480,13 +488,17 @@ h2 {
 
 /* Chat internals – reuse your old styles, just scoped */
 .assistant-body {
-  display: flex;
+  display: contents;
+  /*flex:  1 1 auto;
+  
   flex-direction: column;
-  height: 100%;
+  min-height: 0;
+  /* height: 100%; */
   background: #020617;
 }
 
 .user-info {
+  flex: 0 0 auto;
   padding: 10px 12px;
   background: #020617;
   border-bottom: 1px solid #1f2937;
@@ -502,14 +514,20 @@ h2 {
 }
 
 .user-info input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #374151;
   background: #020617;
   color: #e5e7eb;
+  font-size: 0.85rem;
 }
 
 .chat-container {
-  flex: 1;
-  min-height: 420px;     /* was 680px – allow space for inputs + summary */
-  max-height: 560px;     /* optional: keep it from growing too large */
+  flex: 1 1 auto;
+  min-height:0 ;     /* 420px was 680px – allow space for inputs + summary */
+  /* max-height: 560px;     /* optional: keep it from growing too large */
   padding: 12px 14px;
   overflow-y: auto;
   background: #020617;
@@ -536,7 +554,9 @@ h2 {
 }
 
 .order-summary {
+  flex: 0 0 auto;
   padding: 8px 12px;
+  gap: 6px;
   background: #fef3c7;
   border-top: 1px solid #facc15;
   font-size: 0.8rem;
@@ -547,6 +567,7 @@ h2 {
 }
 
 .input-area {
+  flex: 0 0 auto;
   padding: 10px 12px;
   display: flex;
   gap: 6px;
@@ -556,7 +577,7 @@ h2 {
 
 .input-area input {
   flex: 1;
-  padding: 6px 8px;
+  padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid #374151;
   background: #020617;
@@ -565,7 +586,7 @@ h2 {
 }
 
 .input-area button {
-  padding: 6px 14px;
+  padding: 8px 16px;
   border-radius: 999px;
   border: none;
   background: linear-gradient(135deg, #f97316, #fbbf24);

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const openHeroBtn = document.getElementById("open-assistant-btn");
 
   function openAssistant() {
-    if (widget) widget.style.display = "flex";
+    if (widget) widget.style.display = "grid";
   }
 
   function closeAssistant() {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (toggleBtn && widget) {
     toggleBtn.addEventListener("click", () => {
-      const isOpen = widget.style.display === "flex";
+      const isOpen = widget.style.display === "grid";
       isOpen ? closeAssistant() : openAssistant();
     });
   }

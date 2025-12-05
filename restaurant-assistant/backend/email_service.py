@@ -67,7 +67,7 @@ def send_reservation_confirmation(recipient: str, reservation_details: dict, ord
         """
         
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = '✅ Reservation Confirmed - AI Restaurant'
+        msg['Subject'] = '✅ Reservation Confirmed - Maison Lumière Restaurant'
         msg['From'] = os.getenv('SMTP_USER')
         msg['To'] = recipient
         
